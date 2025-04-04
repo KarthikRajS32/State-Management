@@ -29,9 +29,9 @@ const TaskManager = () => {
 
         <button className="theme" onClick={Change}>
           {color === "dark" ? (
-            <img className="img" src="./public/lighttheme.jpg" alt="light" />
+            <img className="img" src="/lighttheme.jpg" alt="lighttheme" />
           ) : (
-            <img className="img" src="./public/darktheme.jpg" alt="dark" />
+            <img className="img" src="/darktheme.jpg" alt="darktheme" />
           )}
         </button>
 
@@ -39,9 +39,7 @@ const TaskManager = () => {
           <Task />
         </div>
 
-       
-          <Footer />
-        
+        <Footer />
       </div>
     </>
   );
