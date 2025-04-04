@@ -73,15 +73,15 @@ const Task = () => {
             <div className="button">
               {edit === index ? (
                 <button onClick={() => handleSave(index)} className="btn">
-                  <img src="./public/save.svg" alt="" />
+                  <img src="/save.svg" alt="Save" />
                 </button>
               ) : (
                 <button onClick={() => handleEdit(index)} className="btn">
-                  <img src="./public/edit.svg" alt="" />
+                  <img src="/edit.svg" alt="Edit" />
                 </button>
               )}
               <button onClick={() => Delete(index)} className="btn">
-                <img src="./public/delete.svg" alt="" />
+                <img src="/delete.svg" alt="Delete" />
               </button>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Task = () => {
       <br />
       {tasks.length > 0 ? (
         <button className="clear" onClick={clearAllTask}>
-          <img src="./public/delete all.svg" alt="" />
+          <img src="/delete-all.svg" alt="Delete All" />
         </button>
       ) : (
         <p>No tasks added</p>
